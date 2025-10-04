@@ -186,6 +186,11 @@ section {
     text-align: center;
 }
 
+.about p {
+  line-height: 2.6rem;
+  font-size: 18px;
+}
+
 .about-content {
     display: flex;
     align-items: center;
