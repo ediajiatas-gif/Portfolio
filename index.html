@@ -32,134 +32,176 @@
         <!-- Navigation -->
         <nav class="nav">
           <ul class="nav__list">
-            <li><a href="index.html" class="nav__link">Home</a></li>
-            <li><a href="projects.html" class="nav__link">Projects</a></li>
-            <li><a href="about.html" class="nav__link">About</a></li>
-            <li><a href="contact.html" class="nav__link">Contact</a></li>
+            <li><a href="#home" class="nav__link">Home</a></li>
+            <li><a href="#projectpage" class="nav__link">Projects</a></li>
+            <li><a href="#aboutpage" class="nav__link">About</a></li>
+            <li><a href="#contactpage" class="nav__link">Contact</a></li>
           </ul>
         </nav>
       </header>
 
-      <main>
-        <!-- Page Introduction -->
-        <div class="introduction">
-          <h1>Hello, I'm Edi!</h1>
-          <h1 style="color: #97b002">Web Developer</h1>
-          <h1>Based in San Mateo, CA</h1>
-        </div>
+      <!-- Page Introduction -->
+      <main id="home">
+        <div class="intro-container">
+          <div class="introduction">
+            <h1>Hello, I'm Edi!</h1>
+            <h1 style="color: #97b002">Web Developer</h1>
+            <h1>Based in San Mateo, CA</h1>
+            <br />
 
-        <div>
+            <!-- FIX BUTTON! -->
+            <div class="project_section">
+              <a href="#projectpage" class="button">View Project</a>
+            </div>
+          </div>
+
           <img
             class="profile-image"
             src="./assets/IMG_0211.jpg"
             alt="Image of Edi"
           />
         </div>
-        </main>
-       
-        <!-- PROJECTS -->
-        <article class="project">
+      </main>
+
+      <!-- PROJECTS -->
+      <article id="projectpage" class="projects">
+        <div class="section-header">
           <h1>My Projects</h1>
-          <img
-            src="./assets/roseproject4.JPG"
-            alt="Project Rose"
-            class="project_image"
-          />
+        </div>
 
-          <div class="project__content">
-            <h3 class="project__title">Rosa Rubiginosa</h3>
-            <p class="project__description">
-              Brief description of the project and your role.
-            </p>
-            <div class="project__links">
-              <a href="#" class="button">View Project</a>
+        <div class="project-gallery">
+          <div class="project">
+            <img
+              src="./assets/roseproject4.JPG"
+              alt="Project Rose"
+              class="project_image"
+            />
+
+            <div class="project__content">
+              <h3 class="project__title">Rosa Rubiginosa</h3>
+              <p class="project__description">
+                Recreated scientific image through Adobe <br />Illustrator.
+              </p>
+              <div class="project__links">
+                <a href="#projectpage" class="button">View Project</a>
+              </div>
             </div>
           </div>
-          <img
-            src="./assets/roseproject4.JPG"
-            alt="Project Rose"
-            class="project_image"
-          />
 
-          <div class="project__content">
-            <h3 class="project__title">Rosa Rubiginosa</h3>
-            <p class="project__description">
-              Brief description of the project and your role.
-            </p>
-            <div class="project__links">
-              <a href="#" class="button">View Project</a>
+          <div class="project">
+            <img
+              src="./assets/Screenshot 2025-10-04 at 3.52.39 AM.png"
+              alt="PocketStudio"
+              class="project_image"
+            />
+
+            <div class="project__content">
+              <h3 class="project__title">PocketStudio</h3>
+              <p class="project__description">
+                Created mockups, wireframe, and <br />prototype for POCKETSTUDIO
+                app on <br />Figma.
+              </p>
+              <div class="project__links">
+                <a href="#projectpage" class="button">View Project</a>
+              </div>
             </div>
           </div>
-          <img
-            src="./assets/roseproject4.JPG"
-            alt="Project Rose"
-            class="project_image"
-          />
 
-          <div class="project__content">
-            <h3 class="project__title">Rosa Rubiginosa</h3>
-            <p class="project__description">
-              Brief description of the project and your role.
-            </p>
-            <div class="project__links">
-              <a href="#" class="button">View Project</a>
+          <div class="project">
+            <img
+              src="./assets/Screenshot 2025-10-04 at 4.02.53 AM 1(2).png"
+              alt="Image of music website"
+              class="project_image"
+            />
+
+            <div class="project__content">
+              <h3 class="project__title">Edi Ajiatas Music</h3>
+              <p class="project__description">
+                Created my own website for to showcase my musical talents.
+              </p>
+              <div class="project__links">
+                <a href="#projectpage" class="button">View Project</a>
+              </div>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- ABOUT ME -->
-        <section class="about_me">
-          <h1>About Me</h1>
-          <img
-            class="about_me"
-            src="./assets/IMG_6675.jpg"
-            alt="Image of Edi"
-          />
-          <p>
-            💻 I code stuff (sometimes it even works). <br />
-            🏃 When I’m not debugging, I’m probably out running. <br />
-            🎸 I play guitar and make covers because silence is overrated.
-            <br />
-            👯‍♂️ And yeah, I like kicking back with friends whenever I can
-          </p>
-          <br />
-       </section>
-      
+      <!-- ABOUT ME -->
+      <section id="aboutpage" class="about">
+        <h1>About Me</h1>
+
+        <div class="about-content">
+          <div class="about_text">
+            <p>
+              I code stuff (sometimes it even works). <br />
+              When I’m not debugging, I’m probably out running. <br />
+              I play guitar and make covers because silence is overrated.
+              <br />
+              And yeah, I like kicking back with friends whenever I can
+            </p>
+          </div>
+
+          <div class="about_img">
+            <img
+              class="about_me"
+              src="./assets/IMG_6675.jpg"
+              alt="Image of Edi"
+            />
+          </div>
+        </div>
+      </section>
 
       <!-- CONTACT FORM -->
 
-      <form>
-        <div class="mb-3">
-          <label for="firstname" class="form-label">First Name</label>
-          <input type="text" class="form-control" id="firstname" />
-        </div>
-
-        <div class="mb-3">
-          <label for="lastname" class="form-label">Last Name</label>
-          <input type="text" class="form-control" id="lastname" />
-        </div>
-
-        <div class="mb-3">
-          <label for="phonenumber" class="form-label">Phone Number</label>
-          <input type="tel" class="form-control" id="phonenumber" />
-        </div>
-
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-          <div id="emailHelp" class="form-text">
-            We'll never share your email with anyone else.
+      <form id="contactpage" class="contact">
+        <div class="contact-container">
+          <div class="contact-text">
+            <h1>Let's Connect!</h1>
+            <p>
+              Wether you want to bring a project to life or simply chat feel
+              free to send me a message here!
+            </p>
           </div>
-        </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="contact-form">
+          <div class="mb-3">
+            <label for="fullname" class="form-label">Full name</label>
+            <input type="text" class="form-control" id="firstname" />
+          </div>
+
+          <div class="mb-3">
+            <label for="phonenumber" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phonenumber" />
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <br />
+
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+            <label for="floatingTextarea2">Enter message here</label>
+          </div>
+          <br />
+          </div>
+
+          <button type="submit" class="button">Submit</button>
+        </div>
       </form>
 
       <!-- Footer content -->
